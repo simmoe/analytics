@@ -14,13 +14,13 @@
         gtag('config', 'UA-145815969-2');
 
         //Function that registers a click on an outbound link in Analytics. Setting the transport method to 'beacon' lets the hit be sent
-        let getOutboundLink = function () {
+        let getOutboundLink = function (url) {
             gtag('event', 'click', {
                 'event_category': 'outbound',
                 'event_label': 'dyrevern-no',
                 'transport_type': 'beacon',
                 'event_callback': function () {
-                    window.location = 'http://www.dyrevern.no/stott_oss';
+                    window.location = url;
                 }
             });
         }
@@ -50,7 +50,7 @@
             <h1>Jeg er den eneste h1 på siden og jeg inneholder budskapet</h1>
             <p>Jeg er brødtekst på og jeg inneholder LAKS og andre keywords som FISKEDØD eller annet - men ikke for
                 mye,for da blir det keyword spray.</p>
-            <a onclick="getOutboundLink(); return false;">
+            <a onclick="getOutboundLink('http://www.dyrevern.no/stott_oss'); return false;">
                 <img src="./laks.webp" alt="Bilde av en frisk laks" title="Her svømmer en glad frisk fisk">
             </a>
         </div>
