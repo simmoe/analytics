@@ -8,3 +8,6 @@ main {
   height: 100vh;
   display: grid;
   place-items: center; }
+
+main a {
+  cursor: pointer; }
