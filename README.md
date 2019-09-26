@@ -1,4 +1,5 @@
-# analytics
+# Campaign page 
+This is a small landingpage campaign template
 
 ## Demo
 
