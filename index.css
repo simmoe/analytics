@@ -7,7 +7,12 @@ html, body {
 main {
   height: 100vh;
   display: grid;
-  place-items: center; }
+  justify-content: center;
+  align-items: center; }
 
-main a {
+main img {
+  height: 300px;
   cursor: pointer; }
+
+main div {
+  text-align: center; }
