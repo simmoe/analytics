@@ -1,22 +1,41 @@
-html, body{
-    margin:0;
-    padding:0;
-    font-family:Arial;
-    box-sizing:border-box;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    font-family: "Open Sans";
+    font-weight: 300;
+
 }
 
-main{
-    height:100vh;
-    display:grid;
-    justify-content:center;
-    align-items:center;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main img{
-    height:300px;
-    cursor: pointer;
-}
+main {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 
-main div{
-    text-align:center;
+    div {
+        width: 600px;
+        text-align: center;
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            margin-top: 24px;
+            width: 300px;
+            padding: 20px;
+            cursor: pointer;
+            background-color: orange;
+            border-radius: 50%;
+        }
+    }
+
 }

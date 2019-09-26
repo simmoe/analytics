@@ -1,7 +1,12 @@
-html, body {
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+* {
+  font-family: "Open Sans";
+  font-weight: 300; }
+
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: Arial;
   box-sizing: border-box; }
 
 main {
@@ -9,10 +14,16 @@ main {
   display: grid;
   justify-content: center;
   align-items: center; }
-
-main img {
-  height: 300px;
-  cursor: pointer; }
-
-main div {
-  text-align: center; }
+  main div {
+    width: 600px;
+    text-align: center; }
+    main div h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem; }
+    main div img {
+      margin-top: 24px;
+      width: 300px;
+      padding: 20px;
+      cursor: pointer;
+      background-color: orange;
+      border-radius: 50%; }
